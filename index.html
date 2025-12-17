@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="glass-card">
+    <h1>🌦 India Weather App</h1>
+
+    <input type="text" id="cityInput" placeholder="Enter any Indian city">
+    <button onclick="getWeather()">Search</button>
+    <button class="loc-btn" onclick="getLocation()">📍 Use My Location</button>
+
+    <p id="loading"></p>
+
+    <img id="icon" style="display:none;">
+    <h2 id="temp">-- °C</h2>
+    <p id="desc">Search a city to view weather</p>
+
+    <div class="extra">
+        <p>Feels Like: <span id="feels">--</span></p>
+        <p>Humidity: <span id="humidity">--</span></p>
+        <p>Wind: <span id="wind">--</span></p>
+    </div>
+
+    <h3>📅 5-Day Forecast</h3>
+    <div id="forecast"></div>
+
+    <h3>🔍 Search History</h3>
+    <ul id="history"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
