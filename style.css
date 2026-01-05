@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #74ebd5, #9face6);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
 .glass-card {
@@ -82,3 +82,9 @@ ul li {
     border-radius: 6px;
     cursor: pointer;
 }
+.glass-card {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(12px);
+}
+
+
